@@ -1,9 +1,6 @@
-function setLanguage(lang) {
-  const elements = document.querySelectorAll('[data-tr]');
-  elements.forEach(el => {
-    const text = el.getAttribute(`data-${lang}`);
-    if (text) {
-      el.textContent = text;
-    }
+
+function switchLanguage(lang) {
+  document.querySelectorAll('[data-tr], [data-en]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
   });
 }

@@ -1,129 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Telkraft Danışmanlık</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telkraft | Kurumsal Dönüşüm Danışmanlığı</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="container header-container">
-      <img src="logo_poly.svg" alt="Telkraft Logo" class="logo" />
-      <nav class="lang-switcher">
-        <button onclick="setLanguage('tr')">TR</button>
-        <button onclick="setLanguage('en')">EN</button>
-      </nav>
+    <div class="topbar">
+      <img src="logo_poly.svg" alt="Telkraft Logo" class="logo">
+      <div class="language-switch">
+        <button onclick="switchLanguage('tr')">TR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero-text">
+        <h1 data-tr="İçerik Üretiminden Öğrenme Deneyimine: Kurumsal Dönüşüm Yolculuğu" data-en="From Content Production to Learning Experience: Corporate Transformation Journey">İçerik Üretiminden Öğrenme Deneyimine:<br>Kurumsal Dönüşüm Yolculuğu</h1>
+        <p data-tr="Daha sade süreçler, daha güçlü içerikler, daha etkili öğrenme." data-en="Simpler processes, stronger content, more effective learning.">Daha sade süreçler, daha güçlü içerikler, daha etkili öğrenme.</p>
+      </div>
+      <img src="images/hero.png" alt="Hero Illustration">
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 data-tr="Kurumsal Dönüşüm Yolculuğunuza Güç Katın"
-          data-en="Empower Your Institutional Transformation Journey">
-        Kurumsal Dönüşüm Yolculuğunuza Güç Katın
-      </h1>
-      <p data-tr="Daha sade süreçler, daha güçlü içerikler, daha etkili öğrenme."
-         data-en="Simpler processes, stronger content, more effective learning.">
-        Daha sade süreçler, daha güçlü içerikler, daha etkili öğrenme.
-      </p>
-    </div>
-  </section>
+  <main>
+    <section class="services">
+      <h2 data-tr="Hizmetler" data-en="Services">Hizmetler</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <img src="images/01_ihtiyac_analizi.png" alt="Ihtiyac Analizi">
+          <p>İhtiyaç Analizi ve Durum Tespiti</p>
+        </div>
+<div class="service-item">
+          <img src="images/02_urun_yonetimi.png" alt="Urun Yonetimi">
+          <p>İçerik Üretiminde Ürün Yönetimi Yaklaşımı</p>
+        </div>
+<div class="service-item">
+          <img src="images/03_proje_yonetimi.png" alt="Proje Yonetimi">
+          <p>İçerik Üretiminde Proje Yönetimi Yaklaşımı</p>
+        </div>
+<div class="service-item">
+          <img src="images/04_surec_iyilestirme.png" alt="Surec Iyilestirme">
+          <p>İçerik Üretim Süreçlerinin Analizi ve İyileştirilmesi</p>
+        </div>
+<div class="service-item">
+          <img src="images/05_platform_yukleme.png" alt="Platform Yukleme">
+          <p>İçeriklerin Eğitim Platformuna Yüklenmesi ve Yönetimi</p>
+        </div>
+<div class="service-item">
+          <img src="images/06_iletisim_standartlari.png" alt="Iletisim Standartlari">
+          <p>İçerik-Platform İletişim Standartları</p>
+        </div>
+<div class="service-item">
+          <img src="images/07_gorev_dagilimi.png" alt="Gorev Dagilimi">
+          <p>Süreç Fonksiyonları ve Görev Dağılımı</p>
+        </div>
+<div class="service-item">
+          <img src="images/08_yapay_zeka_otomasyon.png" alt="Yapay Zeka Otomasyon">
+          <p>Yapay Zekâ Destekli Üretim ve Otomasyon</p>
+        </div>
+<div class="service-item">
+          <img src="images/09_dis_kaynak.png" alt="Dis Kaynak">
+          <p>Dış Kaynak ve Alt Yüklenici Kullanımı</p>
+        </div>
+<div class="service-item">
+          <img src="images/10_prompt_egitimi.png" alt="Prompt Egitimi">
+          <p>Prompt Engineering Eğitimi ve Uygulama Atölyesi</p>
+        </div>
+<div class="service-item">
+          <img src="images/11_prompt_kutuphanesi.png" alt="Prompt Kutuphanesi">
+          <p>Kuruma Özgü Prompt Kütüphanesi Tasarımı</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="about">
-    <div class="container">
-      <h2 data-tr="Hakkımızda" data-en="About Us">Hakkımızda</h2>
-      <p data-tr="Kurumların bilgi üretme gücünü; teknoloji, tasarım ve öğrenme ilkeleriyle bütünleştirerek, sürdürülebilir ve ölçülebilir bir öğrenme ekosistemine dönüştürüyoruz."
-         data-en="We transform institutions’ knowledge production capabilities into a sustainable and measurable learning ecosystem by integrating technology, design, and learning principles.">
-        Kurumların bilgi üretme gücünü; teknoloji, tasarım ve öğrenme ilkeleriyle bütünleştirerek, sürdürülebilir ve ölçülebilir bir öğrenme ekosistemine dönüştürüyoruz.
-      </p>
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="container">
-      <div class="service-box">
-        <img src="images/service_01.png" alt="1. Service Title" class="service-icon" />
-        <h3 data-tr="1. İhtiyaç Analizi ve Durum Tespiti" data-en="1. Service Title">1. İhtiyaç Analizi ve Durum Tespiti</h3>
-        <p data-tr="Danışmanlık sürecinin ilk adımı olarak kurumun mevcut içerik üretim yapısı, teknoloji kullanımı, ekip işleyişi ve hedefleri detaylı biçimde analiz edilir. Kurumun güçlü yanları görünür kılınır, gelişime açık alanlar belirlenir. Bu analiz süreci; görüşmeler, gözlemler, mevcut dokümanların incelenmesi ve ihtiyaç belirleme atölyeleriyle desteklenir.  Danışmanlık süreci kuruma özel, gerçek ihtiyaçlara göre yapılandırılır. Kurumun güçlü yönleri korunur, kaynaklar etkili kullanılır. İyileştirme önerileri hedef odaklı olur → zaman ve bütçe israfı önlenir. Tüm paydaşların sürece katılımı sağlanır → sahiplenme ve uygulama kolaylaşır. Kurumun kendi iç değerlendirme kapasitesi gelişir → uzun vadede bağımsız gelişim desteklenir." data-en="This initial step of the consultancy process involves a thorough analysis of the institution’s current content production structure, technology usage, team workflow, and strategic goals. Strong areas are highlighted, and development opportunities are identified through interviews, observations, document reviews, and needs assessment workshops.">Danışmanlık sürecinin ilk adımı olarak kurumun mevcut içerik üretim yapısı, teknoloji kullanımı, ekip işleyişi ve hedefleri detaylı biçimde analiz edilir. Kurumun güçlü yanları görünür kılınır, gelişime açık alanlar belirlenir. Bu analiz süreci; görüşmeler, gözlemler, mevcut dokümanların incelenmesi ve ihtiyaç belirleme atölyeleriyle desteklenir.  Danışmanlık süreci kuruma özel, gerçek ihtiyaçlara göre yapılandırılır. Kurumun güçlü yönleri korunur, kaynaklar etkili kullanılır. İyileştirme önerileri hedef odaklı olur → zaman ve bütçe israfı önlenir. Tüm paydaşların sürece katılımı sağlanır → sahiplenme ve uygulama kolaylaşır. Kurumun kendi iç değerlendirme kapasitesi gelişir → uzun vadede bağımsız gelişim desteklenir.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_02.png" alt="2. Service Title" class="service-icon" />
-        <h3 data-tr="2.  İçerik Üretiminde Ürün Yönetimi Yaklaşımı" data-en="2. Service Title">2.  İçerik Üretiminde Ürün Yönetimi Yaklaşımı</h3>
-        <p data-tr="İçerik üretimi yalnızca proje takvimi ile sınırlı bir faaliyet değil; uzun vadeli yönetimi, sürümleri, kullanıcı geri bildirimleri ve yaşam döngüsü olan bir “ürün” olarak ele alınır. Bu danışmanlık hizmetiyle kurumun geliştirdiği içerik türleri (modül, mikro içerik, video serisi, interaktif uygulama vb.) ürünleştirilir ve yaşam döngüsü boyunca nasıl yönetileceği planlanır.  İçerikler yalnızca bir defalık üretim olarak değil, sürekli geliştirilen ürünler olarak ele alınır. Her içerik türü için versiyonlama, güncelleme ve bakım stratejileri oluşturulur → sürdürülebilirlik sağlanır. Kullanıcı geri bildirimleri içerik iyileştirmesinde sistematik olarak kullanılır. İçeriklerin yaşam döngüsü netleştiği için kaynak planlaması ve maliyet öngörüsü kolaylaşır. Ürün yönetimiyle dış kaynaklara bağlılık azalır, içerikler kurumun stratejik varlığına dönüşür. İçerik havuzu zamanla bir kurumsal ürün portföyüne dönüşür → ölçeklenebilir yapı oluşur. Kurumun ürünleştirmek istediği içerikler için gerek planlama, gerek versiyonlama stratejisi oluşturulmasında; istenirse danışman ekip ürün yöneticisi olarak aktif rol alabilir. Bu destek, özellikle yeni içerik modelleri geliştirilen veya ürün mantığı kurum içinde henüz yerleşmemiş durumlarda etkili bir geçiş süreci sağlar." data-en="Content is approached not merely as a project output but as a product with a lifecycle. Each type of content—modules, micro-content, video series, interactive tools—is productized and managed accordingly. Versioning, updates, and user feedback are systematized to ensure sustainability.">İçerik üretimi yalnızca proje takvimi ile sınırlı bir faaliyet değil; uzun vadeli yönetimi, sürümleri, kullanıcı geri bildirimleri ve yaşam döngüsü olan bir “ürün” olarak ele alınır. Bu danışmanlık hizmetiyle kurumun geliştirdiği içerik türleri (modül, mikro içerik, video serisi, interaktif uygulama vb.) ürünleştirilir ve yaşam döngüsü boyunca nasıl yönetileceği planlanır.  İçerikler yalnızca bir defalık üretim olarak değil, sürekli geliştirilen ürünler olarak ele alınır. Her içerik türü için versiyonlama, güncelleme ve bakım stratejileri oluşturulur → sürdürülebilirlik sağlanır. Kullanıcı geri bildirimleri içerik iyileştirmesinde sistematik olarak kullanılır. İçeriklerin yaşam döngüsü netleştiği için kaynak planlaması ve maliyet öngörüsü kolaylaşır. Ürün yönetimiyle dış kaynaklara bağlılık azalır, içerikler kurumun stratejik varlığına dönüşür. İçerik havuzu zamanla bir kurumsal ürün portföyüne dönüşür → ölçeklenebilir yapı oluşur. Kurumun ürünleştirmek istediği içerikler için gerek planlama, gerek versiyonlama stratejisi oluşturulmasında; istenirse danışman ekip ürün yöneticisi olarak aktif rol alabilir. Bu destek, özellikle yeni içerik modelleri geliştirilen veya ürün mantığı kurum içinde henüz yerleşmemiş durumlarda etkili bir geçiş süreci sağlar.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_03.png" alt="3. Service Title" class="service-icon" />
-        <h3 data-tr="3. İçerik Üretiminde Proje Yönetimi Yaklaşımı ve Uygulama Modeli" data-en="3. Service Title">3. İçerik Üretiminde Proje Yönetimi Yaklaşımı ve Uygulama Modeli</h3>
-        <p data-tr="İçerik üretimi proje yönetimi ilkeleriyle ele alınarak planlama, görev yönetimi, izleme ve raporlama yapıları oluşturulur. Agile, Kanban, Waterfall gibi yaklaşımlar hibrit olarak uygulanabilir.  Süreç öngörülebilir ve izlenebilir hale gelir. Hedefler netleştikçe zaman ve kaynak planlaması kolaylaşır. Revizyon, gecikme ve tekrar işleri azaltır → maliyet kontrolü sağlanır. Proje şeffaf ilerler → ekip motivasyonu ve iş birliği artar. Kuruma özgü proje yönetim modeli oluşturularak süreç sürdürülebilir hale gelir. İstenirse, danışmanlık süreci yalnızca yapılandırma ve rehberlik ile sınırlı kalmayıp, kritik projelerde doğrudan operasyonel proje yöneticiliği ya da proje liderliği desteği de sunulabilir. Böylece kurum içi kaynaklar üzerindeki yük hafifletilirken, sürecin kalitesi ve zamanında tamamlanması güvence altına alınır." data-en="Content production is structured using project management principles such as planning, task tracking, monitoring, and reporting. Agile, Kanban, and Waterfall methodologies can be applied in hybrid models to ensure predictability, transparency, and efficient resource use.">İçerik üretimi proje yönetimi ilkeleriyle ele alınarak planlama, görev yönetimi, izleme ve raporlama yapıları oluşturulur. Agile, Kanban, Waterfall gibi yaklaşımlar hibrit olarak uygulanabilir.  Süreç öngörülebilir ve izlenebilir hale gelir. Hedefler netleştikçe zaman ve kaynak planlaması kolaylaşır. Revizyon, gecikme ve tekrar işleri azaltır → maliyet kontrolü sağlanır. Proje şeffaf ilerler → ekip motivasyonu ve iş birliği artar. Kuruma özgü proje yönetim modeli oluşturularak süreç sürdürülebilir hale gelir. İstenirse, danışmanlık süreci yalnızca yapılandırma ve rehberlik ile sınırlı kalmayıp, kritik projelerde doğrudan operasyonel proje yöneticiliği ya da proje liderliği desteği de sunulabilir. Böylece kurum içi kaynaklar üzerindeki yük hafifletilirken, sürecin kalitesi ve zamanında tamamlanması güvence altına alınır.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_04.png" alt="4. Service Title" class="service-icon" />
-        <h3 data-tr="4. İçerik Üretim Süreçlerinin Analizi ve İyileştirilmesi" data-en="4. Service Title">4. İçerik Üretim Süreçlerinin Analizi ve İyileştirilmesi</h3>
-        <p data-tr="Kurumun mevcut içerik üretim süreçleri analiz edilerek geliştirme potansiyeli taşıyan alanlar belirlenir. Bu alanlara yönelik öneriler kurumla birlikte değerlendirilir. Süreçler daha sade, bütüncül ve esnek bir yapıya dönüştürülebilir.  İş akışı sadeleşir, üretim süresi kısalır. Kaynaklar daha verimli kullanılır, maliyet avantajı sağlanır. Süreç standartlaştırıldıkça kişiye bağımlılık azalır. Geliştirilen model kolay aktarılabilir hâle gelir, sürdürülebilirlik artar." data-en="Existing content workflows are analyzed to identify areas for simplification, integration, and flexibility. Process models are co-developed with the institution to reduce dependencies, streamline tasks, and increase sustainability.">Kurumun mevcut içerik üretim süreçleri analiz edilerek geliştirme potansiyeli taşıyan alanlar belirlenir. Bu alanlara yönelik öneriler kurumla birlikte değerlendirilir. Süreçler daha sade, bütüncül ve esnek bir yapıya dönüştürülebilir.  İş akışı sadeleşir, üretim süresi kısalır. Kaynaklar daha verimli kullanılır, maliyet avantajı sağlanır. Süreç standartlaştırıldıkça kişiye bağımlılık azalır. Geliştirilen model kolay aktarılabilir hâle gelir, sürdürülebilirlik artar.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_05.png" alt="5. Service Title" class="service-icon" />
-        <h3 data-tr="5. İçeriklerin Eğitim Platformuna Yüklenmesi ve Yönetimi" data-en="5. Service Title">5. İçeriklerin Eğitim Platformuna Yüklenmesi ve Yönetimi</h3>
-        <p data-tr="Eğitim içeriklerinin dijital platformlara aktarımı, güncelliği ve yönetimi değerlendirilir. Sürecin sadeleştirilmesi ve teknik standartlara uygun hale getirilmesi hedeflenir.  Doğru formatta yükleme ile içerik bütünlüğü sağlanır. SCORM/xAPI uyumluluğu ile sistem bağımsızlık kazanır, dışa bağımlılık azalır. Tekrar eden yüklemeler ve revizyonlar azalır → zaman ve maliyet tasarrufu. Süreç otomatize edildiğinde teknik bilgiye bağımlılık azalır." data-en="The focus is on ensuring that content is properly uploaded to digital platforms, remains up to date, and is technically compliant (e.g., SCORM/xAPI). This reduces redundancy, saves time, and enables more autonomous management by minimizing reliance on technical staff.">Eğitim içeriklerinin dijital platformlara aktarımı, güncelliği ve yönetimi değerlendirilir. Sürecin sadeleştirilmesi ve teknik standartlara uygun hale getirilmesi hedeflenir.  Doğru formatta yükleme ile içerik bütünlüğü sağlanır. SCORM/xAPI uyumluluğu ile sistem bağımsızlık kazanır, dışa bağımlılık azalır. Tekrar eden yüklemeler ve revizyonlar azalır → zaman ve maliyet tasarrufu. Süreç otomatize edildiğinde teknik bilgiye bağımlılık azalır.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_06.png" alt="6. Service Title" class="service-icon" />
-        <h3 data-tr="6. İçerik-Platform İletişim Standartları" data-en="6. Service Title">6. İçerik-Platform İletişim Standartları</h3>
-        <p data-tr="İçeriklerin platformla veri alışverişi, kullanıcı etkileşimi ve analiz üretme yetenekleri kuruma özel olarak yapılandırılır.  Öğrenme analitiği sistematik şekilde kullanılabilir hâle gelir. Geri bildirimler veriye dayalı alınır → kalite iyileştirmesi mümkün olur. SCORM/xAPI gibi açık standartlar kullanılarak dış tedarikçilere olan bağımlılık azaltılır. Standart yapı, sistem değişikliğinde maliyet artışını önler." data-en="The data exchange between content and platform is customized to support analytics and user interaction. Using open standards like SCORM and xAPI allows seamless integration and vendor independence while enabling meaningful learning analytics.">İçeriklerin platformla veri alışverişi, kullanıcı etkileşimi ve analiz üretme yetenekleri kuruma özel olarak yapılandırılır.  Öğrenme analitiği sistematik şekilde kullanılabilir hâle gelir. Geri bildirimler veriye dayalı alınır → kalite iyileştirmesi mümkün olur. SCORM/xAPI gibi açık standartlar kullanılarak dış tedarikçilere olan bağımlılık azaltılır. Standart yapı, sistem değişikliğinde maliyet artışını önler.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_07.png" alt="7. Service Title" class="service-icon" />
-        <h3 data-tr="7. Süreç Fonksiyonları ve Görev Dağılımı" data-en="7. Service Title">7. Süreç Fonksiyonları ve Görev Dağılımı</h3>
-        <p data-tr="İçerik üretim sürecine katkı sunan ekiplerin görev dağılımları, iş akışı içindeki konumları ve sorumlulukları netleştirilir.  Görev çakışmaları önlenir, iş tekrarları azalır. Kimin, ne zaman, ne yapacağı netleşir → kişiye bağımlılık azalır. İnsan kaynağı daha etkin kullanılır, maliyet yükü dengelenir. İş sürekliliği ve sürdürülebilir ekip yapısı oluşur." data-en="Roles, responsibilities, and workflows across content teams are clarified. Clear task distribution minimizes overlaps and repetition, increases operational clarity, and builds resilient and sustainable team structures.">İçerik üretim sürecine katkı sunan ekiplerin görev dağılımları, iş akışı içindeki konumları ve sorumlulukları netleştirilir.  Görev çakışmaları önlenir, iş tekrarları azalır. Kimin, ne zaman, ne yapacağı netleşir → kişiye bağımlılık azalır. İnsan kaynağı daha etkin kullanılır, maliyet yükü dengelenir. İş sürekliliği ve sürdürülebilir ekip yapısı oluşur.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_08.png" alt="8. Service Title" class="service-icon" />
-        <h3 data-tr="8. Yapay Zekâ Destekli Üretim ve Otomasyon Stratejisi" data-en="8. Service Title">8. Yapay Zekâ Destekli Üretim ve Otomasyon Stratejisi</h3>
-        <p data-tr="İçerik üretim sürecinde yapay zekâ araçlarının kullanımı için öneriler geliştirilir. Hangi içerik türlerinde ve hangi adımlarda AI (yapay zekâ) desteği sağlanabileceği belirlenir.  Tekrarlayan görevler AI ile hızlandırılır → zaman ve iş gücü maliyeti düşer. Yapay zekâ tabanlı üretimle üretim kalitesi sabitlenir → sürdürülebilir çıktı elde edilir. AI araçlarının içselleştirilmesiyle dış hizmet alımına bağımlılık azalır. Bilgi, sadece belli kişilerde değil kurumsal sistemde toplanır → kurum hafızası güçlenir." data-en="This service identifies where AI tools can be integrated into the content production process to increase efficiency. Repetitive tasks can be automated, production quality can be stabilized, and organizational knowledge can be retained systemically instead of being person-dependent.">İçerik üretim sürecinde yapay zekâ araçlarının kullanımı için öneriler geliştirilir. Hangi içerik türlerinde ve hangi adımlarda AI (yapay zekâ) desteği sağlanabileceği belirlenir.  Tekrarlayan görevler AI ile hızlandırılır → zaman ve iş gücü maliyeti düşer. Yapay zekâ tabanlı üretimle üretim kalitesi sabitlenir → sürdürülebilir çıktı elde edilir. AI araçlarının içselleştirilmesiyle dış hizmet alımına bağımlılık azalır. Bilgi, sadece belli kişilerde değil kurumsal sistemde toplanır → kurum hafızası güçlenir.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_09.png" alt="9. Service Title" class="service-icon" />
-        <h3 data-tr="9. Dış Kaynak ve Alt Yüklenici Kullanımı Stratejisi" data-en="9. Service Title">9. Dış Kaynak ve Alt Yüklenici Kullanımı Stratejisi</h3>
-        <p data-tr="Kurumun içerik üretim ve yönetim süreçlerinde hangi adımların kurum içinde sürdürülebileceği, hangilerinin dış kaynak veya alt yüklenici ile daha verimli yürütülebileceği analiz edilir. Dış iş birliklerinde kalite, gizlilik, sürdürülebilirlik ve maliyet etkinliği göz önünde bulundurularak stratejik kararlar alınması desteklenir. Ayrıca dış kaynak yönetiminde kullanılacak kontrol ve değerlendirme mekanizmaları yapılandırılır.  Hangi süreçlerin içeride, hangilerinin dışarıda yürütülmesi gerektiği netleşir. Kalite ve maliyet arasında denge kurularak dış iş birlikleri verimli hale getirilir. Alt yüklenici kullanımında kurumsal standartlara bağlılık korunur. Gizlilik ve veri güvenliği ilkeleri dış kaynak süreçlerine entegre edilir. Kurum içi bilgi üretim gücü korunurken dışa bağımlılık dengelenir. Dış iş ortaklarının performansı sistematik biçimde izlenir ve değerlendirilir." data-en="Determines which processes are best kept in-house and which are more efficient when outsourced. Criteria such as cost, quality, sustainability, and confidentiality are considered. Monitoring and evaluation mechanisms are also developed for outsourced work.">Kurumun içerik üretim ve yönetim süreçlerinde hangi adımların kurum içinde sürdürülebileceği, hangilerinin dış kaynak veya alt yüklenici ile daha verimli yürütülebileceği analiz edilir. Dış iş birliklerinde kalite, gizlilik, sürdürülebilirlik ve maliyet etkinliği göz önünde bulundurularak stratejik kararlar alınması desteklenir. Ayrıca dış kaynak yönetiminde kullanılacak kontrol ve değerlendirme mekanizmaları yapılandırılır.  Hangi süreçlerin içeride, hangilerinin dışarıda yürütülmesi gerektiği netleşir. Kalite ve maliyet arasında denge kurularak dış iş birlikleri verimli hale getirilir. Alt yüklenici kullanımında kurumsal standartlara bağlılık korunur. Gizlilik ve veri güvenliği ilkeleri dış kaynak süreçlerine entegre edilir. Kurum içi bilgi üretim gücü korunurken dışa bağımlılık dengelenir. Dış iş ortaklarının performansı sistematik biçimde izlenir ve değerlendirilir.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_10.png" alt="10. Service Title" class="service-icon" />
-        <h3 data-tr="10. Prompt Engineering Eğitimi ve Uygulama Atölyesi" data-en="10. Service Title">10. Prompt Engineering Eğitimi ve Uygulama Atölyesi</h3>
-        <p data-tr="Yapay zekâya etkili komutlar verebilmek için eğitimciler ve içerik geliştiricilere yönelik özel bir eğitim ve atölye süreci sunulur.  Eğitimciler, içerik üretiminde dış kaynaklara daha az ihtiyaç duyar. AI kullanım yetkinliği kuruma yayılır → teknoloji içselleşir. Komut şablonlarının dokümantasyonu kişiye bağlılığı azaltır. Uzun vadeli içerik üretimi için sürdürülebilir bir üretim alışkanlığı gelişir." data-en="A practical training program for educators and content developers to improve their ability to generate effective prompts for AI tools. This empowers teams, reduces external dependency, and fosters internal prompt literacy.">Yapay zekâya etkili komutlar verebilmek için eğitimciler ve içerik geliştiricilere yönelik özel bir eğitim ve atölye süreci sunulur.  Eğitimciler, içerik üretiminde dış kaynaklara daha az ihtiyaç duyar. AI kullanım yetkinliği kuruma yayılır → teknoloji içselleşir. Komut şablonlarının dokümantasyonu kişiye bağlılığı azaltır. Uzun vadeli içerik üretimi için sürdürülebilir bir üretim alışkanlığı gelişir.</p>
-      </div>
-    
-      <div class="service-box">
-        <img src="images/service_11.png" alt="11. Service Title" class="service-icon" />
-        <h3 data-tr="11. Kuruma Özgü Prompt Kütüphanesi Tasarımı" data-en="11. Service Title">11. Kuruma Özgü Prompt Kütüphanesi Tasarımı</h3>
-        <p data-tr="Kurumun ihtiyaçlarına göre yapılandırılmış, içerik türüne, kullanıcı rolüne ve konuya göre sınıflandırılmış bir komut kütüphanesi oluşturulur.  Eğitimciler için hazır komutlar ile içerik üretimi kolaylaşır → zamandan ve maliyetten tasarruf edilir. Kütüphane herkesin erişimine açıktır → üretim kişilere bağlı kalmaz. Güncellenebilir yapı ile sürdürülebilirlik sağlanır. Açık ve kuruma özel bir kaynak oluşur → dış araçlara olan ihtiyaç azalır." data-en="A tailored prompt library is developed based on the institution’s content types, user roles, and subject areas. The systematized and documented library improves content production speed, quality, and institutional memory.">Kurumun ihtiyaçlarına göre yapılandırılmış, içerik türüne, kullanıcı rolüne ve konuya göre sınıflandırılmış bir komut kütüphanesi oluşturulur.  Eğitimciler için hazır komutlar ile içerik üretimi kolaylaşır → zamandan ve maliyetten tasarruf edilir. Kütüphane herkesin erişimine açıktır → üretim kişilere bağlı kalmaz. Güncellenebilir yapı ile sürdürülebilirlik sağlanır. Açık ve kuruma özel bir kaynak oluşur → dış araçlara olan ihtiyaç azalır.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <div class="container">
-      <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
-      <p>
-        <strong>Email:</strong> <a href="mailto:info@telkraft.com">info@telkraft.com</a><br />
-        <strong>Adres:</strong> Beştepe Mah. Nergiz sok. VİA FLAT Plaza 7/2 ofis no: 27-28 Yenimahalle/ANKARA
-      </p>
-    </div>
-  </section>
+    <section class="cta">
+      <h2 data-tr="Telkraft ile Kurumsal Dönüşüm Yolculuğunuza Başlayın" data-en="Start Your Corporate Transformation Journey with Telkraft">Telkraft ile Kurumsal Dönüşüm Yolculuğunuza Başlayın</h2>
+      <a href="#iletisim" class="button" data-tr="Teklif Alın" data-en="Get a Quote">Teklif Alın</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>© 2025 Telkraft Danışmanlık</p>
-    </div>
+    <p>&copy; 2025 Telkraft. Tüm hakları saklıdır.</p>
   </footer>
 
   <script src="scripts.js"></script>
